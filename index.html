@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐑𝐀𝐃𝐇𝐄 𝐀𝐑𝐌𝐘 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1607278537076730');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1607278537076730&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #1c1e21;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            padding: 20px 15px;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Profile Image Animation */
+        .profile-container {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            animation: pulse-glow 2.5s infinite ease-in-out;
+        }
+
+        @keyframes pulse-glow {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(0, 136, 204, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 136, 204, 0);
+            }
+        }
+
+        /* Headline */
+        .headline {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #000000;
+            letter-spacing: 0.5px;
+        }
+
+        /* Subtitle / Text */
+        .sub-headline {
+            color: #0088cc;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #333333;
+            margin-bottom: 25px;
+            font-weight: 600;
+            padding: 0 10px;
+        }
+
+        /* Counter Circle */
+        .counter-box {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #f7f9fa;
+            border: 1px solid #e1e8ed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 25px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* CTA Button Animation */
+        .btn-container {
+            width: 100%;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .join-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #0088cc, #005580);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 136, 204, 0.35);
+            animation: bounce-btn 2s infinite;
+            transition: all 0.3s ease;
+        }
+
+        .join-btn i {
+            font-size: 22px;
+        }
+
+        @keyframes bounce-btn {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-8px);
+            }
+            60% {
+                transform: translateY(-4px);
+            }
+        }
+
+        /* Arrows Animation */
+        .arrows {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .arrows i {
+            color: #0088cc;
+            font-size: 20px;
+            animation: move-up 1.5s infinite ease-in-out;
+        }
+
+        .arrows i:nth-child(2) { animation-delay: 0.2s; }
+        .arrows i:nth-child(3) { animation-delay: 0.4s; }
+        .arrows i:nth-child(4) { animation-delay: 0.6s; }
+
+        @keyframes move-up {
+            0%, 100% { transform: translateY(0); opacity: 0.5; }
+            50% { transform: translateY(-6px); opacity: 1; }
+        }
+
+        /* Footer & Disclaimer Section */
+        footer {
+            width: 100%;
+            max-width: 480px;
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px solid #eaeaea;
+            font-size: 12px;
+            color: #777777;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #555555;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .disclaimer-text {
+            font-size: 11px;
+            line-height: 1.4;
+            color: #888888;
+            margin-top: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Profile Image -->
+        <div class="profile-container">
+            <img src="https://www.image2url.com/r2/default/images/1791302487301-4ea54835-3d74-4156-ab5c-0ff5b6549b88.png" alt="RADHE ARMY OFFICIAL DP" class="profile-img">
+        </div>
+
+        <!-- Headline -->
+        <h1 class="headline">𝐑𝐀𝐃𝐇𝐄 𝐀𝐑𝐌𝐘 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋</h1>
+
+        <!-- Sub-headline & Description -->
+        <div class="sub-headline">! कौन कहता है ऑनलाइन पैसे नहीं कमा सकते !</div>
+        
+        <p class="description">
+            एक बार मेरा चैनल ज्वाइन करके देखो और खुद फर्क महसूस करो अगर अच्छा ना लगे तो चैनल Leave कर देना 👇
+        </p>
+
+        <!-- Counter Box -->
+        <div class="counter-box" id="timer">2</div>
+
+        <!-- Telegram CTA Button -->
+        <div class="btn-container">
+            <a href="https://t.me/+0P9Ath5bL3Q2Mjll" class="join-btn" onclick="fbq('track', 'Lead');">
+                <i class="fa-brands fa-telegram"></i> JOIN VIP TELEGRAM
+            </a>
+        </div>
+
+        <!-- Animated Arrows -->
+        <div class="arrows">
+            <i class="fa-solid fa-arrow-up"></i>
+            <i class="fa-solid fa-arrow-up"></i>
+            <i class="fa-solid fa-arrow-up"></i>
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </div>
+
+    <!-- Verified Meta Compliance Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Disclaimer</a> | 
+            <a href="#">Terms & Conditions</a>
+        </div>
+        <div class="disclaimer-text">
+            <strong>Disclaimer:</strong> This website is not part of the Facebook website or Meta Platforms, Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of META PLATFORMS, Inc. All information provided here is for informational and educational purposes only.
+        </div>
+    </footer>
+
+    <!-- Basic Bot Filter Protection Script -->
+    <script>
+        (function() {
+            var isBot = false;
+            if (navigator.webdriver) { isBot = true; }
+            if (window.phantom || window._phantom || window.callPhantom) { isBot = true; }
+            if (navigator.userAgent.match(/(bot|crawl|spider|headless|puppeteer|selenium)/i)) { isBot = true; }
+
+            if (isBot) {
+                document.querySelectorAll('a').forEach(function(el) {
+                    el.href = 'javascript:void(0);';
+                    el.onclick = function(e) { e.preventDefault(); return false; };
+                });
+            }
+        })();
+    </script>
+
+</body>
+</html>
